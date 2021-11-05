@@ -45,8 +45,6 @@ export BLUE
 export BOLD
 export RESET
 
-export CLICOLOR=1
-export LSCOLORS=CxbxCxDxFxegedabagaced
 
 function parse_git_dirty() {
   [[ $(git status 2> /dev/null | tail -n1) != *"working tree clean"* ]] && echo "*"
